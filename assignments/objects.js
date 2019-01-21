@@ -54,15 +54,29 @@ const interns = [
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
-// Mitzi's name
-
-// Kennan's ID
-
-// Keven's email
-
-// Gannie's name
-
-// Antonietta's Gender
+for (let i = 0; i < interns.length; i++) {
+  let intern = interns[i];
+  if (intern.name === 'Mitzi') {
+    // Mitzi's name
+    console.log(intern.name);
+  }
+  if (intern.name === 'Kennan') {
+    // Kennan's ID
+    console.log(`Kennan's ID: ${intern.id}`);
+  }
+  if (intern.name === 'Keven') {
+    // Keven's email
+    console.log(`Keven's Email: ${intern.email}`);
+  }
+  if (intern.name === 'Gannie') {
+    // Gannie's name
+    console.log(intern.name);
+  }
+  if (intern.name === 'Antonietta') {
+    // Antonietta's Gender
+    console.log(`Antonietta's Gender: ${intern.gender}`);
+  }
+}
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
