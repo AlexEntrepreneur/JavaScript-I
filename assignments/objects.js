@@ -79,11 +79,23 @@ for (let i = 0; i < interns.length; i++) {
 }
 
 // ==== Challenge 3: Object Methods ====
-// Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+for (let i = 0; i < interns.length; i++) {
+  let intern = interns[i];
+  if (intern.name === 'Kennan') {
+    // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+    // console.log(kennan.speak());
+    intern.speak = function() {
+      return 'Hello, my name is Kennan!';
+    }
+  }
+  if (intern.name === 'Antonietta') {
+    // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+    //console.log(antonietta.multiplyNums(3,4));
+    intern.multiplyNums = function(a, b) {
+      return a * b;
+    }
+  }
+}
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
